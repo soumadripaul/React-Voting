@@ -7,3 +7,16 @@ services:
       - 9090:9090
     volumes:
       - ./prometheus-config.yml:/etc/prometheus/prometheus.yml
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    container_name: react-voting-app
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
