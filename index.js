@@ -44,7 +44,7 @@ app.get("/slow", async (req, res) => {
             status: "Success",
             message: `Heavy task completed in ${timeTaken}ms`,
         });
-    } catch (error) {
+    } catch {
         return res
             .status(500)
             .json({ status: "Error", error: "Internal Server Error" });
