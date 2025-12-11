@@ -60,7 +60,7 @@ jobs:
       id: meta
       uses: docker/metadata-action@v5
       with:
-        images: ${{ secrets.DOCKER_USERNAME }}/react-voting
+        images: soumadri007/react-voting
         tags: |
           type=ref,event=branch
           type=sha,prefix={{branch}}-
@@ -73,8 +73,8 @@ jobs:
         push: true
         tags: ${{ steps.meta.outputs.tags }}
         labels: ${{ steps.meta.outputs.labels }}
-        cache-from: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/react-voting:buildcache
-        cache-to: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/react-voting:buildcache,mode=max
+        cache-from: type=registry,ref=soumadri007/react-voting:buildcache
+        cache-to: type=registry,ref=soumadri007/react-voting:buildcache,mode=max
 
   # Job 3: Deploy (placeholder - customize based on your deployment target)
   deploy:
@@ -99,7 +99,7 @@ jobs:
     #     username: ${{ secrets.SERVER_USER }}
     #     key: ${{ secrets.SERVER_SSH_KEY }}
     #     script: |
-    #       docker pull ${{ secrets.DOCKER_USERNAME }}/react-voting:latest
+    #       docker pull soumadri007/react-voting:latest
     #       docker stop react-voting || true
     #       docker rm react-voting || true
-    #       docker run -d --name react-voting -p 80:80 ${{ secrets.DOCKER_USERNAME }}/react-voting:latest
+    #       docker run -d --name react-voting -p 80:80 soumadri007/react-voting:latest

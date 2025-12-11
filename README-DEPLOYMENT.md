@@ -37,7 +37,7 @@ docker-compose logs -f
 
 To enable the CI/CD pipeline, add these secrets to your GitHub repository:
 
-1. **DOCKER_USERNAME**: Your Docker Hub username
+1. **DOCKER_USERNAME**: Your Docker Hub username (soumadri007)
 2. **DOCKER_PASSWORD**: Your Docker Hub password or access token
 
 #### How to Add Secrets:
