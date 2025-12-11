@@ -1,0 +1,285 @@
+/* Main Container */
+.voting-container {
+  padding: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  min-height: 100vh;
+}
+
+/* Main Title */
+.main-title {
+  text-align: center;
+  color: #006747;
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Eligibility Check Section */
+.eligibility-check-section {
+  margin-bottom: 30px;
+  padding: 25px;
+  background: white;
+  border: 3px solid #006747;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 103, 71, 0.15);
+}
+
+.eligibility-check-section h2 {
+  color: #006747;
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.eligibility-check-section p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Input Group */
+.input-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.age-input {
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 2px solid #006747;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 150px;
+  transition: all 0.3s ease;
+}
+
+.age-input:focus {
+  outline: none;
+  border-color: #00a862;
+  box-shadow: 0 0 0 3px rgba(0, 168, 98, 0.1);
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #006747 0%, #00a862 100%);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #005038 0%, #008f53 100%);
+}
+
+/* Message Boxes */
+.message-box {
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border: 3px solid;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.message-box h2 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+.message-box p {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+/* Not Eligible */
+.not-eligible {
+  background: linear-gradient(135deg, #ffe6e6 0%, #ffcccc 100%);
+  border-color: #dc2626;
+}
+
+.not-eligible h2 {
+  color: #991b1b;
+}
+
+.not-eligible p {
+  color: #7f1d1d;
+}
+
+/* Eligible */
+.eligible {
+  background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+  border-color: #10b981;
+}
+
+.eligible h2 {
+  color: #065f46;
+}
+
+.eligible p {
+  color: #064e3b;
+}
+
+/* Thank You */
+.thank-you {
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+  border-color: #3b82f6;
+}
+
+.thank-you h2 {
+  color: #1e40af;
+}
+
+.thank-you p {
+  color: #1e3a8a;
+}
+
+/* Voting Section */
+.voting-section {
+  margin-bottom: 30px;
+}
+
+.voting-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-candidate-a {
+  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+  color: white;
+  flex: 1;
+  min-width: 200px;
+  padding: 18px 30px;
+  font-size: 18px;
+}
+
+.btn-candidate-a:hover {
+  background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+}
+
+.btn-candidate-b {
+  background: linear-gradient(135deg, #ea580c 0%, #f97316 100%);
+  color: white;
+  flex: 1;
+  min-width: 200px;
+  padding: 18px 30px;
+  font-size: 18px;
+}
+
+.btn-candidate-b:hover {
+  background: linear-gradient(135deg, #c2410c 0%, #ea580c 100%);
+}
+
+/* Results Section */
+.results-section {
+  padding: 25px;
+  background: white;
+  border: 3px solid #334155;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.results-section h2 {
+  text-align: center;
+  color: #1e293b;
+  margin-top: 0;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.vote-counts {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #334155;
+}
+
+.vote-counts p {
+  margin: 10px 0;
+  padding: 10px;
+  background: #f8fafc;
+  border-radius: 8px;
+  border-left: 4px solid #006747;
+}
+
+.vote-number {
+  color: #006747;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.leading-status {
+  font-size: 20px;
+  font-weight: bold;
+  color: #006747;
+  text-align: center;
+  padding: 15px;
+  background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+  border-radius: 8px;
+  border: 2px solid #10b981;
+  animation: pulse 2s infinite;
+}
+
+/* Animation */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .voting-container {
+    padding: 10px;
+  }
+  
+  .main-title {
+    font-size: 22px;
+    padding: 15px;
+  }
+  
+  .input-group {
+    flex-direction: column;
+  }
+  
+  .age-input {
+    width: 100%;
+  }
+  
+  .voting-buttons {
+    flex-direction: column;
+  }
+  
+  .btn-candidate-a,
+  .btn-candidate-b {
+    min-width: 100%;
+  }
+}
